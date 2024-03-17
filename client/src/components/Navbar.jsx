@@ -17,7 +17,7 @@ const Navbar = () => {
         <h1 className=" font-semibold text-[25px] xl:text-[32px] tracking-widest">
           CookWith<span className=" text-[#FF4650]">Me</span>
         </h1>
-        <div className=" z-50 gap-80 items-center hidden xl:flex">
+        <div className=" z-50 gap-20 2xl:gap-80 items-center hidden xl:flex">
           <ul className="flex gap-12 text-white duration-150">
             <li className=" hover:cursor-pointer hover:font-medium">Home</li>
             <li className=" hover:cursor-pointer hover:font-medium">Recipes</li>
@@ -38,8 +38,7 @@ const Navbar = () => {
       </Drawer>
       </div>
       <svg
-        className=" absolute right-0 top-[-270px] md:top-[-200px] xl:top-0 z-10 md:w-[55%] w-[60%]"
-        height="833"
+        className=" absolute right-0 top-[-270px] md:top-[-200px] xl:top-0 z-10 md:w-[55%] w-[60%] xl:h-[600px] 2xl:h-[833px]"
         viewBox="0 0 813 733"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

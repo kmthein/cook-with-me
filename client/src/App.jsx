@@ -1,13 +1,24 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
+import Hero from './components/home/Hero'
+import { RouterProvider, createBrowserRouter } from "react-router-dom"
+import Main from './layouts/Main'
+import Home from './pages/Home'
+
+const router = createBrowserRouter([{
+  path: "/",
+  element: <Main />,
+  children: [
+    {
+      index: true,
+      element: <Home />
+    }
+  ]
+}])
 
 const App = () => {
   return (
-    <div>
-        <Navbar />
-        <Hero />
-    </div>
+    <RouterProvider router={router} />
   )
 }
 
