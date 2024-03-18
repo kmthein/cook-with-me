@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className=" flex justify-between items-center">
         <Link to="/">
           <h1 className=" font-semibold text-[25px] xl:text-[32px] tracking-widest">
-            CookWith<span className=" text-[#FF4650]">Me</span>
+            CookWith<span className=" text-[#FB7E0B]">Me</span>
           </h1>
         </Link>
         <div className=" z-50 gap-20 2xl:gap-80 items-center hidden xl:flex">
