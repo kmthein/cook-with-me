@@ -25,11 +25,15 @@ const Navbar = () => {
         <div className=" z-50 gap-20 2xl:gap-80 items-center hidden xl:flex">
           {location.pathname == "/" ? (
             <ul className="flex gap-12 text-white duration-150">
-              <li className=" hover:cursor-pointer hover:font-medium">Home</li>
+              <Link to="/">
+                <li className=" hover:cursor-pointer hover:font-medium">
+                  Home
+                </li>
+              </Link>
               <Link to="/recipes">
-              <li className=" hover:cursor-pointer hover:font-medium">
-                Recipes
-              </li>
+                <li className=" hover:cursor-pointer hover:font-medium">
+                  Recipes
+                </li>
               </Link>
               <li className=" hover:cursor-pointer hover:font-medium">
                 Add Recipe
@@ -40,11 +44,15 @@ const Navbar = () => {
             </ul>
           ) : (
             <ul className="flex gap-12 duration-150">
-              <li className=" hover:cursor-pointer hover:font-medium">Home</li>
+              <Link to="/">
+                <li className=" hover:cursor-pointer hover:font-medium">
+                  Home
+                </li>
+              </Link>
               <Link to="/recipes">
-              <li className=" hover:cursor-pointer hover:font-medium">
-                Recipes
-              </li>
+                <li className=" hover:cursor-pointer hover:font-medium">
+                  Recipes
+                </li>
               </Link>
               <li className=" hover:cursor-pointer hover:font-medium">
                 Add Recipe
